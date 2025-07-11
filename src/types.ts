@@ -2782,6 +2782,9 @@ export declare interface EditImageConfig {
       only).
        */
   outputCompressionQuality?: number;
+  /** Whether to add a watermark to the generated images.
+   */
+  addWatermark?: boolean;
   /** Describes the editing mode for the request. */
   editMode?: EditMode;
   /** The number of sampling steps. A higher value has better image
@@ -3128,7 +3131,7 @@ export declare interface GenerateVideosConfig {
   seed?: number;
   /** The aspect ratio for the generated video. 16:9 (landscape) and 9:16 (portrait) are supported. */
   aspectRatio?: string;
-  /** The resolution for the generated video. 1280x720, 1920x1080 are supported. */
+  /** The resolution for the generated video. 720p and 1080p are supported. */
   resolution?: string;
   /** Whether allow to generate person videos, and restrict to specific ages. Supported values are: dont_allow, allow_adult. */
   personGeneration?: string;
